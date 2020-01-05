@@ -1,0 +1,75 @@
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "photo"
+    "name"
+    "contact"
+    "summary"
+    "skills"
+    "experience"
+    "education";
+}
+
+/* .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "name photo"
+      "skills summary"
+      "experience experience"
+      "education";
+} */
+
+/* @media (min-width: 1200px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "name photo"
+      "skills summary"
+      "experience experience"
+      "education";
+  }
+} */
+
+.name {
+  grid-area: name;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.icontact {
+    display: inline-block;
+}
+
+
