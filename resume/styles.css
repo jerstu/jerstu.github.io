@@ -69,7 +69,7 @@ ul {
 }
 
 .icontact {
-    display: inline-block;
+    white-space: nowrap;
 }
 
 
