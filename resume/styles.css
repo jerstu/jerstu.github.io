@@ -1,4 +1,4 @@
-.resume {
+/* .resume {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -9,14 +9,14 @@
     "skills"
     "experience"
     "education";
-}
+} */
 
 /* .resume {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "name photo"
+      "name photo"      
       "skills summary"
       "experience experience"
       "education";
@@ -40,7 +40,7 @@
 }
 
 .contact {
-    grid-area: contact;
+  grid-area: contact;
 }
 
 .photo {
@@ -63,13 +63,15 @@
   grid-area: education;
 }
 
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .icontact {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
+i {
+  padding: 10px;
+  padding-right: 20px;
+}
