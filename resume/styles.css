@@ -1,6 +1,16 @@
-/* .resume {
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.page {
+  margin: auto;
+}
+
+.resume {
   display: grid;
   grid-template-columns: 1fr;
+
   grid-template-areas:
     "photo"
     "name"
@@ -9,34 +19,36 @@
     "skills"
     "experience"
     "education";
-} */
+}
 
-/* .resume {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "name photo"      
-      "skills summary"
-      "experience experience"
-      "education";
-} */
-
-/* @media (min-width: 1200px) {
+/* 
+@media (min-width: 800px) {
   .resume {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
     grid-template-areas:
       "name photo"
+      "contact photo"
       "skills summary"
       "experience experience"
-      "education";
+      "experience experience"
+      "education education";
   }
 } */
 
+.resume {
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 10px;
+}
 .name {
   grid-area: name;
+  text-align: center;
 }
 
 .contact {
@@ -63,15 +75,57 @@
   grid-area: education;
 }
 
-ul {
+p + ul {
   list-style: none;
+  margin-top: -15px;
+  margin-left: -10px;
 }
 
 .icontact {
   white-space: nowrap;
+  margin-top: -10px;
+  width: 200px;
 }
 
 i {
-  padding: 10px;
-  padding-right: 20px;
+  margin-right: 10px;
+}
+
+.myphoto {
+  display: block;
+  padding: 20px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img {
+  max-width: 100px;
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
+
+@media print {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas:
+      "name photo"
+      "contact photo"
+      "skills summary"
+      "experience experience"
+      "experience experience"
+      "education education";
+  }
 }
