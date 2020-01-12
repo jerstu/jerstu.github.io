@@ -1,18 +1,18 @@
-body {
+/* body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-}
+} */
 
-.page {
+/* .page {
   margin: auto;
-}
+} */
 
 .resume {
+  min-width: 400px;
   display: grid;
   grid-template-columns: 1fr;
 
   grid-template-areas:
-    "photo"
     "name"
     "contact"
     "summary"
@@ -37,7 +37,7 @@ body {
   }
 } */
 
-.resume {
+/* .resume {
   border: 2px solid gainsboro;
   border-radius: 10px;
   padding: 10px;
@@ -45,7 +45,8 @@ body {
   max-width: 1000px;
   margin: auto;
   margin-top: 10px;
-}
+} */
+
 .name {
   grid-area: name;
   text-align: center;
@@ -53,10 +54,7 @@ body {
 
 .contact {
   grid-area: contact;
-}
-
-.photo {
-  grid-area: photo;
+  text-align: center;
 }
 
 .summary {
@@ -75,35 +73,24 @@ body {
   grid-area: education;
 }
 
-p + ul {
+ul {
   list-style: none;
-  margin-top: -15px;
-  margin-left: -10px;
 }
 
 .icontact {
   white-space: nowrap;
-  margin-top: -10px;
-  width: 200px;
+  width: 400px;
 }
 
 i {
-  margin-right: 10px;
+  margin: 5px;
 }
 
-.myphoto {
-  display: block;
-  padding: 20px;
-  border-radius: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-img {
-  max-width: 100px;
-}
-
+/* @media only screen and (max-width: 400px) {
+  .icontact {
+    display: block;
+  }
+} */
 @page {
   padding: 0;
   margin: 0cm;
@@ -121,8 +108,8 @@ img {
     grid-template-columns: 2fr 1fr;
 
     grid-template-areas:
-      "name photo"
-      "contact photo"
+      "name name"
+      "contact contact"
       "skills summary"
       "experience experience"
       "experience experience"
