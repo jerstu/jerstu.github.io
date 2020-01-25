@@ -27,7 +27,7 @@ h2 {
 #orderForm {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 } 
 
 
@@ -44,6 +44,11 @@ h2 {
   font-size: 4em;
 }
 
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 
 .btn {
@@ -86,3 +91,4 @@ h2 {
   border-radius: 30px;
   font-size: 125%;
 }
+
