@@ -1,7 +1,6 @@
-/* body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-} */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* .page {
   margin: auto;
@@ -36,7 +35,11 @@
   }
 } */
 
-/* .resume {
+h3 {
+  margin: 0;
+}
+
+.resume {
   border: 2px solid gainsboro;
   border-radius: 10px;
   padding: 10px;
@@ -44,7 +47,7 @@
   max-width: 1000px;
   margin: auto;
   margin-top: 10px;
-} */
+}
 
 .name {
   grid-area: name;
@@ -74,6 +77,11 @@
 
 ul {
   list-style: none;
+  margin-top: 0;
+}
+
+p{
+  margin-top: 0;
 }
 
 .icontact {
@@ -84,14 +92,9 @@ i {
   margin: 5px;
 }
 
-/* @media only screen and (max-width: 400px) {
-  .icontact {
-    display: block;
-  }
-} */
 @page {
   padding: 0;
-  margin: 0cm;
+  margin: 0;
   size: A4 portrait;
 }
 
@@ -103,14 +106,14 @@ i {
 
   .resume {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
 
     grid-template-areas:
-      "name name"
-      "contact contact"
-      "skills summary"
-      "experience experience"
-      "experience experience"
-      "education education";
+      "name"
+      "contact"
+      "skills"
+      "summary"
+      "experience"
+      "education";
   }
 }
