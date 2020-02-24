@@ -1,78 +1,58 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 400px;
 }
 
-/* .page {
+.page {
   margin: auto;
-} */
-
-.resume {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  grid-template-areas:
-    "name"
-    "contact"
-    "summary"
-    "skills"
-    "experience"
-    "education";
 }
 
-/* 
-@media (min-width: 800px) {
+@media only screen{
   .resume {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    grid-template-areas:
-      "name photo"
-      "contact photo"
-      "skills summary"
-      "experience experience"
-      "experience experience"
-      "education education";
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
   }
-} */
-
-h3 {
-  margin: 0;
 }
 
 .resume {
-  border: 2px solid gainsboro;
-  border-radius: 10px;
-  padding: 10px;
-
   max-width: 1000px;
   margin: auto;
   margin-top: 10px;
 }
 
-.name {
-  grid-area: name;
+.header {
   text-align: center;
+}
+
+.name {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .contact {
-  grid-area: contact;
   text-align: center;
 }
 
-.summary {
-  grid-area: summary;
+a {
+  color: black;
 }
 
-.skills {
-  grid-area: skills;
+
+h2 {
+  margin-top: 0;
 }
 
-.experience {
-  grid-area: experience;
+h3 {
+  margin: 0;
 }
 
-.education {
-  grid-area: education;
+hr {
+}
+
+#title {
+  margin-top: -20px;
 }
 
 ul {
@@ -80,8 +60,9 @@ ul {
   margin-top: 0;
 }
 
-p{
+p {
   margin-top: 0;
+  text-indent: 2em;
 }
 
 .icontact {
@@ -90,6 +71,14 @@ p{
 
 i {
   margin: 5px;
+}
+
+@media only screen{
+  .resume {
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
 
 @page {
@@ -103,17 +92,9 @@ i {
     text-decoration: none;
     color: #000;
   }
-
   .resume {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-      "name"
-      "contact"
-      "skills"
-      "summary"
-      "experience"
-      "education";
+    border-left: 2px solid gainsboro;
+    border-right: 2px solid gainsboro;
+    padding: 10px;
   }
 }
